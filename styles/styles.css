@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: inline;
+}
+
+.tron {
+    text-align: center;
+    font-size: 15px;
+    background-color: #4F6F52;
+    
+}
+
+.tron img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;    
+    padding-left: 0;
+}
+
+nav {
+    background-color: #739072;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F7FFE5;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#content .card h2,p,img{
+    padding-left: 25px;
+}
+
+.card button {
+    margin-left: 25px;
+}
+
+#content {
+    flex: 5;
+    gap: 2rem;
+    flex-flow: column nowrap;
+}
+
+#content img{
+    padding-left: 25px;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside {
+    margin-right: 15px;
+    flex: 3;
+}
+
+aside section p,img{
+    padding: 0;
+}
+
+aside section h2{
+    padding-left: 0;
+}
+
+.profile h2{
+    text-align: center;
+}
+
+.profile h3{
+    text-align: center;
+}
+
+.profile p{
+    text-align: center;
+}
+
+.profile img {
+    margin: 0 25% 0 25%;
+}
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.bar {
+    width: 20%;
+    background-color:  #A0C49D;
+    margin-right: 10px;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.news {
+    display: grid;
+    gap: 20px;
+}
+
+.news-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.news-item h3 {
+    margin-top: 0;
+}
+
+.news-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 15px;
+    background-color:  #A0C49D;
+    color: #D2E3C8;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media query untuk layar dengan lebar maksimum 768px */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        padding: 5px 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .tron img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        max-width: 100%; /* Tambahkan baris ini */
+        padding-left: 0;
+    }
+    
+    .card {
+        margin-left: 0;
+    }
+
+    #content .card h2,
+    #content .card p,
+    #content img {
+        padding-left: 0;
+    }
+
+    .card button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #content img {
+        padding-left: 0;
+    }
+
+    aside {
+        margin-right: 0;
+    }
+
+    .profile img {
+        margin: 0 25%;
+        width: 80%;
+    }
+
+    iframe {
+        margin: 0 25%;
+    }
+}
+
+/* Media query untuk layar dengan lebar maksimum 1000px */
+@media only screen and (max-width: 1000px) {
+    .tron img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        max-width: 100%; /* Tambahkan baris ini */
+        padding-left: 0;
+    }
+
+    .profile img {
+        margin: 0 25%;
+        width: 80%;
+    }
+
+    iframe {
+        margin: 0;
+        width: 100%;
+    }
+}

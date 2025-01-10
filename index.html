@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Kicau Alam</title>
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="tron">
+            <img src="img/tron.png" alt="COMING SOON">
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#content">Burung Kicau</a>
+                </li>
+                <li>
+                    <a href="#berita">Berita Burung</a>
+                </li>
+                <li>
+                    <a href="#tentangKami">Tentang Kami</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="content">
+            <article id="content1" class="card">
+                <h2>Muray Batu</h2>
+                <img src="img/muray1.jpg" alt="COMING">
+                <p>Muray batu (Lanius schach) merupakan salah satu jenis burung kicau yang sangat populer di Indonesia.
+                    Mereka dikenal karena suara kicau yang merdu dan penampilan yang menawan. Murai batu biasanya
+                    memiliki warna bulu yang mencolok, dengan kombinasi warna hitam, putih, dan cokelat. Mereka sering
+                    dijadikan burung peliharaan oleh para pecinta burung karena kemampuan vokal dan keindahan bulunya.
+                </p>
+                <audio id="audio-muray" src="audio/muray.mp3"></audio>
+                <button id="button-muray">Putar Suara</button>
+                <button id="stop-button-muray">Stop Suara</button>
+                <p><strong>Kisaran Harga:</strong> Rp 750.000 - Rp 1.000.000</p>
+            </article>
+
+            <article id="content2" class="card">
+                <h2>Cicak Ijo</h2>
+                <img src="img/cicakijo.jpg" alt="COMING">
+                <p>Cicak ijo adalah burung kicau yang memiliki suara yang ceria dan ciri khasnya adalah warna bulunya
+                    yang hijau. Mereka sering dijadikan burung peliharaan karena keindahan bulunya dan kemampuan vokal
+                    yang unik. Cicak ijo juga dikenal sebagai burung yang ramah dan mudah beradaptasi dengan lingkungan
+                    di sekitarnya.</p>
+                <audio id="audio-cicakijo" src="audio/cicakijo.mp3"></audio>
+                <button id="button-cicakijo">Putar Suara</button>
+                <button id="stop-button-cicakijo">Stop Suara</button>
+                <p><strong>Kisaran Harga:</strong> Rp 350.000 - Rp 750.000</p>
+            </article>
+
+            <article id="content3" class="card">
+                <h2>Burung Kacer</h2>
+                <img src="img/kacer.jpg" alt="COMING">
+                <p>Burung kacer (Copsychus saularis) adalah burung kicau yang sangat populer di kalangan pecinta burung.
+                    Mereka dikenal karena suara kicau yang keras dan indah. Burung kacer sering dijadikan burung kontes
+                    karena kemampuannya dalam meniru suara burung lain dan memiliki variasi suara yang kaya. Mereka juga
+                    merupakan burung yang aktif dan lincah.</p>
+                <audio id="audio-kacer" src="audio/kacer.mp3"></audio>
+                <button id="button-kacer">Putar Suara</button>
+                <button id="stop-button-kacer">Stop Suara</button>
+                <p><strong>Kisaran Harga:</strong> Rp 250.000 - Rp 500.000</p>
+            </article>
+        </div>
+
+        <aside>
+            <section class="aside card">
+                <h3>Top 5 Burung Kicau banyak peminatnya</h3>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 90%;"></div>
+                    <div class="bar" style="height: 76%;"></div>
+                    <div class="bar" style="height: 62%;"></div>
+                    <div class="bar" style="height: 50%;"></div>
+                    <div class="bar" style="height: 35%;"></div>
+                </div>
+                <div class="labels">
+                    <span>Muray Batu</span>
+                    <span>Cicak Ijo</span>
+                    <span>Kacer</span>
+                    <span>Kenari</span>
+                    <span>Perkutut</span>
+                </div>
+                <p>Data top 5 burung kicau dalam bulan terakhir.</p>
+            </section>
+
+            <section class="aside card" id="berita">
+                <h2>Berita Terbaru</h2>
+                <div class="news">
+                    <div class="news-item">
+                        <h4>Harga Murai Batu Anjlok, Peternak Tetap Bertahan</h4>
+                        <img src="img/ternak_muray.jpg" alt="" style="width: 100%; height: auto;">
+                        <p>Salah satu jenis burung kicau yang masih menjadi favorit bagi kalangan pecinta kicau mania
+                            ialah burung murai batu. Namun akhir-akhir ini harga jual murai batu di pasaran cenderung
+                            mengalami penurunan disebabkan oleh beberapa hal...</p>
+                        <a href="https://gunungkidul.sorot.co/berita-106460-link.html">Baca Selengkapnya</a>
+                    </div>
+                    <div class="news-item">
+                        <h4>Cerita Kicau Mania Burung Juara Bisa Laku 50 Juta</h4>
+                        <img src="img/lomba.png" alt="" style="width: 100%; height: auto;">
+                        <p>kemeriahan Festival Burung Berkicau Bupati Cup Tingkat Nasional di Alun-Alun Temanggung yang
+                            tidak hanya memukau dengan kicauan indah burung-burung juara, tetapi juga mengungkap potensi
+                            ekonomi besar di balik hobi ini....</p>
+                        <a
+                            href="https://mediacenter.temanggungkab.go.id/berita/detail/cerita-kicau-mania-burung-juara-bisa-laku-rp-50-juta">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aside card" id="tentangKami">
+                <div class="profile">
+                    <h2>Kicau Alam</h2>
+                    <p>Informasi Seputar Burung Kicau</p>
+                    <img src="img/logo_kicau.png" alt="Kicau Alam" style="width: 50%; height: auto;">
+                    <p>Kicau Alam adalah situs yang berdedikasi untuk para pecinta burung kicau. Kami menyediakan
+                        informasi
+                        terbaru tentang burung kicau, jenis-jenis burung kicau populer, dan berbagai informasi
+                        bermanfaat
+                        lainnya.</p>
+                    <h3>Tempat Penjualan Burung</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.993068387492!2d106.84140730781252!3d-6.197800599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f460d5a57949%3A0x3481c579d430ba49!2sThe%20Bird%20Market!5e0!3m2!1sen!2sid!4v1715684496517!5m2!1sen!2sid"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; Kicau Alam 2024 Muhammad Nur Alam</p>
+    </footer>
+</body>
+
+</html>
